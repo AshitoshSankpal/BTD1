@@ -7,6 +7,7 @@ import io
 # Tensorflow model prediction
 import os
 model_path = os.path.abspath('trained_ashitosh.h5')
+model = tf.keras.models.load_model(model_path)
 
 def is_mri_brain_image(image):
     """
